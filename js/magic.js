@@ -190,8 +190,9 @@
   jstool.prototype.init.prototype = jstool.prototype;
 
   window.jstool = jstool;
+  jst = new jstool();
+  jst.magicCirle();
+  jst.footFish();
 })(window);
 
-jst = new jstool();
-jst.magicCirle();
-jst.footFish();
+
