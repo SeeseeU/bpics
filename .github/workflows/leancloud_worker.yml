@@ -1,0 +1,12 @@
+name: leancloud-worker  
+on:                     
+  schedule:
+    - cron: '1,25,45 0-15 * * *'
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'step1'
+        env:
+          VALINEADDRESS: ${{ secrets.VALINEADDRESS}}
+        run: curl $VALINEADDRESS -k
